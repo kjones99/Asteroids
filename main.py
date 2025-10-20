@@ -9,9 +9,11 @@ from shot import Shot
 def main():
     #initialize pygame, create the screen and clock
     pygame.init
+    
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     clock = pygame.time.Clock()
     dt = 0
+    score = 0
 
     #create groups for the game objects
     updatable = pygame.sprite.Group()
